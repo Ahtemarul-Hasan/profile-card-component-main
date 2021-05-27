@@ -17,7 +17,7 @@ This was just a basic project.
 ![Mobile](./screenshot-1.png)
 ![desktop](./screenshot-2.png)
 
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://ahtemarul-hasan.github.io/profile-card-component-main/)
 
 ### My process
 Mobile first approach.
