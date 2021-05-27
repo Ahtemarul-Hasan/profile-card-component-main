@@ -1,0 +1,117 @@
+:root {
+	--dark-cyan: hsl(185, 75%, 39%);
+	--dark-blue: hsl(229, 23%, 23%);
+	--grayish-blue: hsl(227, 10%, 46%);
+	--neutral-gray: hsl(0, 0%, 59%);
+	--white: hsl(0, 0%, 100%);
+	font-size: 18px;
+	font-family: "Kumbh Sans", sans-serif;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	text-align: center;
+	color: var(--dark-blue);
+}
+
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background: var(--dark-cyan);
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url("./images/bg-pattern-top.svg"),
+		url("./images/bg-pattern-bottom.svg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: right 40vw bottom 50vh, left 35vw top 45vh;
+	min-height: 100vh;
+}
+h1,
+h2,
+span {
+	font-size: 1.2rem;
+}
+span {
+	font-weight: 400;
+	color: var(--grayish-blue);
+}
+h2 {
+	font-size: 1.1rem;
+}
+h3 {
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--grayish-blue);
+}
+.card {
+	position: relative;
+	background: var(--white);
+	height: 22.23rem;
+	width: 19.45rem;
+	margin: auto;
+	border-radius: 1.12rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.card-img-container {
+	height: 7.78rem;
+	width: 100%;
+}
+.card-img-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	border-top-left-radius: 1.12rem;
+	border-top-right-radius: 1.12rem;
+}
+
+.card > img {
+	position: absolute;
+	top: 22%;
+	right: 35%;
+	border-radius: 50%;
+	border: 6px solid var(--white);
+}
+
+.text-container {
+	width: 100%;
+}
+.text-container .stat {
+	padding: 1rem 0 0.5rem 0;
+	border-top: 1px solid var(--dark-cyan);
+	display: flex;
+	justify-content: space-around;
+}
+.text-container .stat .stats {
+	line-height: 0.5;
+}
+
+.attribution {
+	padding: 1rem;
+	font-size: clamp(0.8rem, 2vw, 1.5rem);
+	text-align: center;
+}
+.attribution a {
+	text-decoration: none;
+	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 500px) {
+	body {
+		background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+	}
+}
