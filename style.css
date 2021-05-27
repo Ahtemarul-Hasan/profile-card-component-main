@@ -101,7 +101,7 @@ h3 {
 
 .attribution {
 	padding: 1rem;
-	font-size: clamp(0.8rem, 2vw, 1.5rem);
+	font-size: clamp(0.5rem, 2vw, 0.9rem);
 	text-align: center;
 }
 .attribution a {
